@@ -1,0 +1,289 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  -webkit-animation-name: anim-color;
+  -moz-animation-name: anim-color;
+  -o-animation-name: anim-color;
+  animation-name: anim-color;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  -moz-animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  -o-animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: reverse;
+  -moz-animation-direction: reverse;
+  -o-animation-direction: reverse;
+  animation-direction: reverse;
+  -webkit-animation: anim-color 2s easy 1s infinity reverse;
+  -moz-animation: anim-color 2s easy 1s infinity reverse;
+  -o-animation: anim-color 2s easy 1s infinity reverse;
+  animation: anim-color 2s easy 1s infinity reverse;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-color {
+  0% {
+    background-color: gray;
+    margin-left: 0;
+  }
+
+  to {
+    background-color: purple;
+    margin-left: 400px;
+  }
+}
+.body {
+  font-size: 10px;
+}
+
+.header-top,
+section {
+  text-align: center;
+}
+
+.header-logo {
+  margin-top: 2.5rem;
+  font-size: 1.9rem;
+  font-family: "Panton";
+  color: #363636;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header-call {
+  margin-top: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.header-call button,
+.header-call span {
+  font-family: "Panton";
+  color: #363636;
+  font-weight: 700;
+}
+
+.header-call span {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+
+.header-call button {
+  display: inline-block;
+  border-width: 1px;
+  border-color: #282828;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: #fff;
+  vertical-align: middle;
+  margin-top: .2rem;
+  width: 19rem;
+  height: 3.2rem;
+  outline: 0;
+}
+
+.header-menu {
+  background-color: #292d30;
+  color: #fff;
+  text-align: center;
+}
+
+.header-menu ul {
+  margin: auto;
+  line-height: 6rem;
+}
+
+.header-menu li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.header-menu li a {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.header-menu li a:hover,
+.header-page .header-btn a:hover {
+  text-decoration: none;
+}
+
+.header-page {
+  text-align: center;
+  height: 80rem;
+  background-image: url("../img/header-background.jpg");
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.header-page img {
+  margin-top: 15rem;
+  width: 40rem;
+}
+
+.header-page h2,
+.header-page p {
+  font-family: "Panton";
+  color: #fff;
+  font-weight: 800;
+}
+
+.header-page h2 {
+  line-height: 1.6;
+  font-size: 3rem;
+}
+
+.header-page h3,
+section .task h1 {
+  font-size: 1.9rem;
+  font-family: "Panton";
+  color: #fff;
+  line-height: 1.6;
+}
+
+.header-page p {
+  font-size: 1.9rem;
+  margin-top: 4rem;
+}
+
+.header-page .arrow {
+  width: 42px;
+  position: relative;
+  top: -20%;
+  left: 65%;
+}
+
+.header-page .arrow img {
+  width: 42px;
+  height: 67px;
+}
+
+@media all and (max-width:1200px) {
+  .header-page .arrow {
+    left: 70%;
+  }
+}
+
+@media all and (max-width:890px) {
+  .header-page .arrow {
+    left: 80%;
+  }
+}
+
+@media all and (max-width:600px) {
+  .header-page .arrow {
+    left: 90%;
+  }
+}
+
+@media all and (max-width:500px) {
+  .header-page .arrow {
+    visibility: hidden;
+  }
+}
+
+.header-page .header-btn {
+  display: inline-block;
+  border-width: 1px;
+  border-color: #059feb;
+  border-style: solid;
+  border-radius: 30px;
+  background-color: #059feb;
+  position: relative;
+  top: -19rem;
+  width: 29rem;
+  height: 4.6rem;
+}
+
+.header-mouse span,
+.header-page .header-btn a {
+  font-family: "Panton";
+  color: #fff;
+  font-weight: 700;
+}
+
+.header-page .header-btn a {
+  line-height: 4.6rem;
+}
+
+.header-mouse {
+  margin-top: -4rem;
+}
+
+.header-mouse span {
+  display: block;
+  font-size: 2rem;
+}
+
+.header-mouse img {
+  margin-top: 2rem;
+  width: 36px;
+  height: 58px;
+}
+
+section {
+  height: 100vh;
+  padding-top: 3rem;
+}
+
+section .task h1 {
+  font-size: 4rem;
+  color: #363636;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+section .task span {
+  display: block;
+  margin: 0 auto;
+  background-color: #059feb;
+  height: 4px;
+  width: 20rem;
+  margin-bottom: 2rem;
+}
+
+section .task p {
+  font-family: 'Panton';
+  font-weight: 600;
+  font-size: 1.8rem;
+  width: 68%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+section .task-item .task-img {
+  width: 110px;
+  margin-bottom: 2rem;
+}
+
+section .task-item h1,
+section .task-item p {
+  font-size: 2.5rem;
+  font-family: "Panton";
+  color: #363636;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+section .task-item p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
